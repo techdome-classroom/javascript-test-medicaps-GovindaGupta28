@@ -2,8 +2,6 @@ function smallest_missing_positive_integer(nums) {
 
   nums = nums.filter((num) => num > 0);
   const numSet = new Set(nums);
-
-  
   let smallestMissing = 1;
   while (numSet.has(smallestMissing)) {
     smallestMissing++;
