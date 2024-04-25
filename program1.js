@@ -8,6 +8,8 @@ function longestSubstring(s) {
             seenChars.add(s[right]);
             right++ ;
             maxlength = Math.max(maxlength, right-left);
+        }else{
+            seenChars.delete(s[left])
         }
     }
 }
