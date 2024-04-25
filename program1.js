@@ -17,7 +17,7 @@ function longestSubstring(s) {
 }
 
 const exampleInput = "abcabcbb";
-console.log(longestSubStringwithout)
+console.log(longestSubStringwithoutrepetating)
 
 module.exports = { longestSubstring };
 
