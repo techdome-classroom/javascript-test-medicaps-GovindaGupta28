@@ -7,7 +7,7 @@ function longestSubstring(s) {
         if(!seenChars.has(s[right])){
             seenChars.add(s[right]);
             right++ ;
-            maxlength = Math.max(maxlength)
+            maxlength = Math.max(maxlength, right-)
         }
     }
 }
