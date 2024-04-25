@@ -4,7 +4,9 @@ function longestSubstring(s) {
     let right = 0;
     let maxlength = 0;
     while(right< s.length){
-        if(!seenChars.has(s[right]))
+        if(!seenChars.has(s[right])){
+            seenChars.add(s[right])
+        }
     }
 }
 
