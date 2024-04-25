@@ -3,7 +3,9 @@ function longestSubstring(s) {
     let left = 0;
     let right = 0;
     let maxlength = 0;
-    while(right< s.length)
+    while(right< s.length){
+        
+    }
 }
 
 module.exports = { longestSubstring };
