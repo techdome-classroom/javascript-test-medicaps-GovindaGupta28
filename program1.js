@@ -1,5 +1,5 @@
 function longestSubstring(s) {
-    let 
+    let left
 }
 
 module.exports = { longestSubstring };
