@@ -1,23 +1,23 @@
-function longestSubstring(s) {
-    let seenChars = new set() ; 
-    let left = 0;
-    let right = 0;
-    let maxlength = 0;
-    while(right< s.length){
-        if(!seenChars.has(s[right])){
-            seenChars.add(s[right]);
-            right++ ;
-            maxlength = Math.max(maxlength, right-left);
-        }else{
-            seenChars.delete(s[left]);
-            left++;
-        }
+function lengthOfLongestSubstring(s) {
+  let maxLength = 0;
+  let start = 0;
+  let end = 0;
+  let seen = new Set();
+
+  while (end < s.length) {
+    if (!seen.has(s[end])) {
+      seen.add(s[end]);
+      end++;
+      maxLength = Math.max(maxLength, end - start);
+    } else {
+      seen.delete(s[start]);
+      start++;
     }
-    return maxlength;
+  }
+
+  return maxLength;
 }
 
-const exampleInput = "abcabcbb";
-console.log(longestSubString(exampleInput));
-
-
-
+// Example usage:
+let inputString = "abcabcbb";
+console.log(lengthOfLongestSubstring(inputString)); // Output: 3
