@@ -20,4 +20,4 @@ function lengthOfLongestSubstring(s) {
 
 // Example usage:
 let inputString = "abcabcbb";
-console.log(lengthOfLongestSubstring(inputString)); // Output: 3
+console.log(lengthOfLongestSubstring(inputString));
